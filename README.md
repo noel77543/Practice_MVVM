@@ -1,5 +1,5 @@
-# MVVM框架練習
-##使用技術:
+## MVVM框架練習
+### 使用技術:
 - Retrofit
 - okHttp
 - Room
@@ -8,7 +8,7 @@
 - ViewModel
 - life-cycle(LiveData, lifecyclerOwner etc...)
 
-##實現
+### 實現
 UI與數據綁定,
 當數據更新無須自主更新UI。
 
