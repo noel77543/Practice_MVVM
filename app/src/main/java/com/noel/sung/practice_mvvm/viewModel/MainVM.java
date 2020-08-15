@@ -52,7 +52,7 @@ public class MainVM extends AndroidViewModel {
                 mainUseCase.connectToGetMainDataFromServer(new ApiCallBack<MainModel>() {
                     @Override
                     public void onSuccess(MainModel data) {
-                        data.setLastUpdateTime(new SimpleDateFormat("yyyy/MM/dd hh:mm:ss", Locale.getDefault()).format(Calendar.getInstance().getTime()));
+                        data.setLastUpdateTime(new SimpleDateFormat("yyyy/MM/dd HH:mm:ss", Locale.getDefault()).format(Calendar.getInstance().getTime()));
                         Log.e("取得API資料成功", new Gson().toJson(data));
                         mainUseCase.insertMainDataToDataBase(getApplication(), data);
                         response.postValue(data);

@@ -33,7 +33,7 @@
             android:id="@+id/text_view_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{String.format(@string/size_format,viewModel.response.color)}"
+            android:text="@{String.format(@string/color_format,viewModel.response.color)}"
             android:textColor="@android:color/black" />
 
         <TextView
