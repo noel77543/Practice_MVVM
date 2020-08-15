@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MainActivityBinding">
+
+        <variable
+            name="viewModel"
+            type="com.noel.sung.practice_mvvm.viewModel.MainVM" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+        <TextView
+            android:id="@+id/text_view_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/fruit_format,viewModel.response.fruit)}"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text_view_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/size_format,viewModel.response.size)}"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text_view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/size_format,viewModel.response.color)}"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text_view_last_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.format(@string/last_update_time_format,viewModel.response.lastUpdateTime)}"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</layout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practice_MVVM</string>
+
+    <string name="fruit_format">水果:%s</string>
+    <string name="size_format">尺寸:%s</string>
+    <string name="color_format">顏色:%s</string>
+    <string name="last_update_time_format">更新時間:%s</string>
+</resources>
