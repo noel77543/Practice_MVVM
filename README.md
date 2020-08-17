@@ -4,7 +4,7 @@
 - okHttp
 - Room
 - Gson
-- Databinding
+- Databinding,Repository,UseCase 框架
 - ViewModel
 - life-cycle(LiveData, lifecyclerOwner etc...)
 
